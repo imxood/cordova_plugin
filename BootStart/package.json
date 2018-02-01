@@ -1,0 +1,17 @@
+{
+  "name": "BootStart",
+  "version": "1.0.0",
+  "description": "plugman create --name BootStart --plugin_id BootStart --plugin_version 1.0.0",
+  "cordova": {
+    "id": "BootStart",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

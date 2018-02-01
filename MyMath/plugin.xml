@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="SimpleMath" version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MyMath</name>
+    <!-- 前端工程师在使用的时候通过这个 clobbers 去调用www/MyMath.js的公开方法 -->
+    <js-module name="MyMath" src="www/MyMath.js">
+        <clobbers target="cordova.plugins.MyMath" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <!-- （服务名）name -->
+            <feature name="MyMath">
+                <!-- 底层实现类：SimpleMath.MyMath -->
+                <param name="android-package" value="SimpleMath.MyMath" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <!-- 这里的目录默认生成是不对的，需要修改 -->
+        <source-file src="src/android/MyMath.java" target-dir="src/SimpleMath" />
+    </platform>
+</plugin>
