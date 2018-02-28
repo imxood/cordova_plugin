@@ -1,0 +1,27 @@
+{
+    "name": "cordova-plugin-IFlyspeech",
+    "version": "0.0.1",
+    "description": "cordova plugin IFlyspeech",
+    "cordova": {
+        "id": "cordova-plugin-IFlyspeech",
+        "platforms": [
+            "android",
+            "ios",
+            "windows",
+            "browser",
+            "osx"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/imxood/cordova-plugin-IFlyspeech.git"
+    },
+    "keywords": [
+        "cordova",
+        "cordova-android",
+        "cordova-ios"
+    ],
+    "license": "Apache-2.0",
+    "devDependencies": {
+    }
+}

@@ -3,7 +3,7 @@ package BootStart;
 import java.util.List;
 
 import android.content.BroadcastReceiver;
-import android.content.Context;  
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 
@@ -17,8 +17,6 @@ public class BootStart extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // Toast.makeText(context, "广播信息", Toast.LENGTH_SHORT).show();
         if (intent.getAction().equals(action_boot)) {
-            // u can start your service here
-            Toast.makeText(context, "开机广播信息", Toast.LENGTH_SHORT).show();
 
             Context appContext = context.getApplicationContext();
 
