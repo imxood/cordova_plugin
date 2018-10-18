@@ -1,4 +1,4 @@
-package BootStart;
+package bootstart;
 
 import java.util.List;
 

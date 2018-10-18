@@ -18,13 +18,13 @@
             <activity android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
         </edit-config> -->
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="BootStart.BootStart" android:enabled="true" android:exported="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <receiver android:name="bootstart.BootStart" android:enabled="true" android:exported="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
                     <category android:name="android.intent.category.HOME" />
                 </intent-filter>
             </receiver>
         </config-file>
-        <source-file src="src/android/BootStart.java" target-dir="src/BootStart" />
+        <source-file src="src/android/BootStart.java" target-dir="src/bootstart" />
     </platform>
 </plugin>
